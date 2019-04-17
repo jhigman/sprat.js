@@ -1,0 +1,31 @@
+doctype html
+
+html
+  head
+    title= appTitle
+
+    link(rel="stylesheet", href="/css/bootstrap-4.0.0/css/bootstrap.min.css")
+    script(type="text/javascript", src="/css/bootstrap-4.0.0/js/bootstrap.min.js")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+  body
+    #wrap
+      .container
+
+        .h1.page-header= appTitle
+
+        p.lead Hello dudes
+
+        block page
+        block header
+          div
+            // include includes/menu
+        block alert
+          div.alert.alert-warning.hidden
+        .content
+          block content
+    block footer
+      footer
+        .container
+          p
+            | some stuff | more stuff
